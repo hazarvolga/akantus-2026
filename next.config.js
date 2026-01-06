@@ -1,13 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
-  
-  // Production optimizations
+  // output: 'standalone', // ŞİMDİLİK KALDIR
   poweredByHeader: false,
   generateEtags: false,
-  
-  // Hosting compatibility - Next.js 15 için güncellenmiş
-  serverExternalPackages: []
+  experimental: {
+    serverExternalPackages: [], // gerekiyorsa burada kullan
+  },
 }
 
 module.exports = nextConfig
