@@ -4,17 +4,8 @@ const nextConfig = {
   poweredByHeader: false,
   generateEtags: false,
   
-  // Hosting compatibility
-  experimental: {
-    serverComponentsExternalPackages: []
-  },
-  
-  // Static export için gerekli konfigürasyon (lokalde kullanım için)
-  // output: 'export',
-  // trailingSlash: true,
-  // images: {
-  //   unoptimized: true
-  // }
+  // Hosting compatibility - Next.js 15 için güncellenmiş
+  serverExternalPackages: []
 }
 
 module.exports = nextConfig
